@@ -111,7 +111,7 @@ void runner_thread(__unused void *args) {
     RUN_TEST(test_request);
     RUN_TEST(test_noone_home);
     UNITY_END();
-    sleep_ms(5000);
+    vTaskDelay((TickType_t)5000);
   }
 }
 
